@@ -50,10 +50,10 @@ public partial class PlayerBelt : Panel
 		if ( inventory == null )
 			return;
 		
-		/*if ( player.ActiveChild is PhysGun physgun && physgun.BeamActive )
+		if ( player.ActiveChild is PhysGun physgun && physgun.BeamActive )
 		{
 			return;
-		}*/
+		}
 
 		if ( input.Pressed( InputButton.Slot1 ) ) SetActiveSlot( input, inventory, 0 );
 		if ( input.Pressed( InputButton.Slot2 ) ) SetActiveSlot( input, inventory, 1 );
