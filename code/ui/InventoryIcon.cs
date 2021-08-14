@@ -51,14 +51,14 @@ public partial class InventoryIcon : Panel
 			itemIcon.Style.Background = background;
 			return; }
 
-
+		// make it so that when the targetWeapon.Icon changes, it sets Texture to null so that it auto updates
 		if ( itemIcon.Style.Background.GetValueOrDefault().Texture == null )
 		{
 			var background = itemIcon.Style.Background.GetValueOrDefault();
 			background.Texture = Texture.Load( $"/entity/{targetWeapon.Icon}", true );
 			itemIcon.Style.Background = background;
 		}
-
+		
 		//Log.Info( TargetEnt.EntityName );
 
 	}
