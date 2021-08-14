@@ -1,0 +1,89 @@
+﻿Notifications {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end; // thats the one to use when not testing
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.notificationBack {
+    top: 24px;
+    padding-top: 2px;
+    //padding-bottom: 4.38px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    margin-top: 3px;
+    display: grid;
+    margin-right: 24px;
+    width: 287.9px;
+    background-color: #475136;
+    transition: background-color 0.3s ease-out;
+    display: none;
+    opacity: 0.95;
+
+    &.active {
+        display: flex;
+    }
+
+    &.pickedUpItem {
+        background-color: #475136;
+    }
+}
+
+.notificationLeftText {
+    top: 6px;
+    left: 3.8px;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.notificationRightText {
+    position: absolute;
+    top: 6px;
+    right: 13px;
+    text-align: right;
+    justify-content: right;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    opacity: 0.6;
+}
+
+.notifierBack {
+    top: 24px;
+    //	padding-top: 1.5px;
+    //padding-bottom: 4.38px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 0px;
+    margin-top: 3px;
+    display: grid;
+    margin-right: 24px;
+    width: 287.9px;
+    background-color: #475136;
+    display: none;
+    opacity: 0.95;
+
+    &.active {
+        display: flex;
+    }
+
+
+    &.comfort {
+        background-color: #526430;
+    }
+
+    &.redNotif {
+        background-color: #c7452f;
+    }
+}

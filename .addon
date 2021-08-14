@@ -1,0 +1,13 @@
+{
+	"sharedassets": "*.*",
+	"type": "game",
+	"name": "srust",
+	"gamemodes":
+	[
+		{
+			"name": "srust",
+			"title": "Rust",
+			"description": "Basically a Rust clone for S&Box. Still WIP."
+		}
+	]
+}

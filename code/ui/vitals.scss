@@ -1,0 +1,79 @@
+Vitals {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+    height: 100%;
+    //width: 100%;
+    justify-content: flex-start; // thats the one to use when not testing
+   // align-items: flex-end; // nonreverse: end, top too
+    flex-direction: column-reverse;
+}
+
+.vitalBack {
+    top: 24px;
+    padding-top: 7.5px;
+    //padding-bottom: 4.38px;
+    padding-bottom: 1.38px;
+    padding-left: 6px;
+    margin-top: 3px;
+    display: grid;
+    margin-right: 24px;
+    width: 287.9px;
+    background-color: #6565652D;
+
+    .vitalBar {
+        position: relative;
+        height: 31px;
+        width: 250px;
+        left: 7px;
+    }
+    // top of orange bar: 1362 bottom of orange  bar: 1401
+    // end top of first hunger tab: 1356
+    // bottom grey of second thirst: 1351
+    // bottom blue of second thirst: 1345
+    // top of all top health: grey1244
+    //left of all left grey hunger: 6464
+    //this is my model!
+    .hungerBar {
+        height: 30px;
+        width: 246.5px;
+        background-color: #c16c31;
+        left: 7px;
+        bottom: 2.7px;
+    }
+
+    .healthBar {
+        height: 30px;
+        width: 246.5px;
+        background-color: #88b53a;
+        left: 7px;
+        bottom: 2.7px;
+    }
+
+    .thirstBar {
+        //background-image: url('https://i.imgur.com/noyVSQB.png');
+        height: 30px;
+        width: 246.5px;
+        background-color: #4595ce;
+        left: 7px;
+        bottom: 2.7px;
+    }
+}
+
+
+.vitalText {
+    //margin-left: 10px;
+    //margin-right: 5px;
+    color: #ffffff;
+    //text-shadow: 0 0 1px black;6e8a46
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    font-size: 21px;
+    color: white;
+    position: absolute;
+    bottom: 3px;
+    left: 11px;
+    opacity: 0.6;
+    //font: bold 32px roboto;
+}
